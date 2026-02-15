@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ספר המידות — רבי נחמן מברסלב</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&family=Heebo:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">📘 ספר המידות</h1>
+            <p class="subtitle">רבי נחמן מברסלב</p>
+        </div>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <div class="container">
+            <input type="text" id="searchInput" placeholder="🔍 חפש מידה..." class="search-input">
+            <div id="searchResults" class="search-results"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Sidebar - Chapters List -->
+            <aside class="sidebar" id="sidebar">
+                <h2>📚 כל הפרקים</h2>
+                <div class="chapters-list" id="chaptersList">
+                    <div class="loading">טוען פרקים...</div>
+                </div>
+            </aside>
+
+            <!-- Content Area -->
+            <article class="content-area" id="contentArea">
+                <div class="welcome-screen">
+                    <h2>🌟 ברוכים הבאים לספר המידות</h2>
+                    <p>בחרו פרק מהרשימה כדי להתחיל</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number" id="totalChapters">93</span>
+                            <span class="stat-label">פרקים</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">הושלם</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>📚 מאגר חסידות ברסלב — BresLev Spark (BS)</p>
+            <p>כל הזכויות שמורות © תשפ״ו</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="chapters-loader.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
